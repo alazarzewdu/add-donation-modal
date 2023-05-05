@@ -55,7 +55,7 @@ const App: React.FC = () => {
         </Space>
         
         <div className="donation-input">
-        <DatePicker size='small' className='date' onChange={onChange}/>
+        <DatePicker size='middle' className='date' onChange={onChange}/>
 
         </div>
     
