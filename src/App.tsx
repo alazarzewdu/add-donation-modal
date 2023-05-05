@@ -92,7 +92,4 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
 };
 
 export default App
-function setValue(value: any) {
-  throw new Error('Function not implemented.');
-}
 
