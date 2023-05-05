@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+#root {
+  font-family: 'Inter', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+.btn-dashed {
+  font-family: 'Inter';
+  color: #820014;
+  font-size: 14px;
+}
+
+.person {
+margin-top: 25px;
+width: 90px;
+height: 90px;
+}
+
+
+.profile_detail {
+  padding-left: 100px;
+  margin-top: -80px;
+  font-size: 14px;
+  font-family: 'inter', sans-serif;
+}
+
+
+.donation-text {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.donation-input {
+  position: fixed;
+  margin-left: 120px;
+  margin-top: -145px;
+  font-size: 14px;
+}
