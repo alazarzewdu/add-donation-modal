@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Button, Modal } from 'antd';
+import { Button, Modal, Input, Radio } from 'antd';
 import {DatePicker, Space } from 'antd';
-import type {DatePickerProps} from 'antd';
+import type {DatePickerProps, RadioChangeEvent} from 'antd';
 
 
 import './App.css'
@@ -11,9 +11,15 @@ import person from './assets/person.png'
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [value, setValue] = useState(1);
 
-    const onChange: DatePickerProps['onChange'] = (date, dateString) => 
+const onChange: DatePickerProps['onChange'] = (date, dateString) => 
   console.log(date, dateString);
+
+ const onChanger = (e: RadioChangeEvent) => {
+    console.log('radio checked', e.target.value);
+    setValue(e.target.value);
+  };
 
   
 
@@ -48,7 +54,7 @@ const App: React.FC = () => {
 
         <div className='donation-text'>
           <p>Donation Date:</p>
-          <p>Amount:</p>
+          <p className='amount-text'>Amount:</p>
           <p>Payment Type:</p>
           <p>Notes:</p>
         </div>
@@ -56,6 +62,16 @@ const App: React.FC = () => {
         
         <div className="donation-input">
         <DatePicker size='small' className='date' onChange={onChange}/>
+
+       <Input placeholder='25' size='small'className='amount'/>
+
+       <Radio.Group onChange={onChanger} value={value} className='radio'>
+      <Space direction="vertical">
+        <Radio value={1}>Electronic</Radio>
+        <Radio value={2}>Cash/Check</Radio>
+        <Radio value={3}>In Kind</Radio>
+      </Space>
+    </Radio.Group>
 
         </div>
     
@@ -66,3 +82,7 @@ const App: React.FC = () => {
 };
 
 export default App
+function setValue(value: any) {
+  throw new Error('Function not implemented.');
+}
+

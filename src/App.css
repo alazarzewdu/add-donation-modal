@@ -43,3 +43,14 @@ height: 90px;
   margin-top: -145px;
   font-size: 14px;
 }
+
+.amount {
+  position: fixed;
+  width: 100px;
+  margin-top: 35px;
+  margin-left: -123px;
+}
+
+.amount-text {
+  padding-top: ;
+}
