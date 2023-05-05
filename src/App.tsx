@@ -21,6 +21,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
     setValue(e.target.value);
   };
 
+  const { TextArea } = Input;
   
 
   const showModal = () => {
@@ -43,7 +44,15 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       <Button className='btn-dashed' type="dashed" onClick={showModal}>
         + Add 
       </Button>
-      <Modal title="Add Donation" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="Add Donation" 
+      className='btn' 
+      open={isModalOpen} 
+      onOk={handleOk} 
+      onCancel={handleCancel}
+      okButtonProps={{ className: 'custom-ok-button' }}
+      cancelButtonProps={{ className: 'custom-cancel-button' }}
+      okText="Save"
+  cancelText="Cancel">
 
         <div className='profile'>
           <img src={person} className='person'></img>
@@ -54,13 +63,13 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
 
         <div className='donation-text'>
           <p>Donation Date:</p>
-          <p className='amount-text'>Amount:</p>
+          <p className='amount-txt'>Amount:</p>
           <p>Payment Type:</p>
-          <p>Notes:</p>
+          <p className='notes-txt'>Notes:</p>
         </div>
         </Space>
         
-        <div className="donation-input">
+        
         <DatePicker size='small' className='date' onChange={onChange}/>
 
        <Input placeholder='25' size='small'className='amount'/>
@@ -73,9 +82,10 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       </Space>
     </Radio.Group>
 
-        </div>
-    
 
+      <TextArea rows={3} size='small' className='notes-field'
+      autoSize={false}
+      style={{resize: 'none'}} />
       </Modal>
     </>
   );
