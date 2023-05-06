@@ -16,7 +16,7 @@ const App: React.FC = () => {
 const onChange: DatePickerProps['onChange'] = (date, dateString) => 
   console.log(date, dateString);
 
- const [messageApi, contextHolder] = message.useMessage();
+
 
  const onChanger = (e: RadioChangeEvent) => {
     console.log('radio checked', e.target.value);
@@ -38,12 +38,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
     setIsModalOpen(false);
   };
 
-  const success = () => {
-    messageApi.open({
-      type: 'success',
-      content: 'This is a success message',
-    });
-  };
+
 
   const profile_detail = ['Lee, Michelle', <br/>, '1488 Olympus Ave', <br/>, 'Berkley, CA 94708'];
 
@@ -58,7 +53,6 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       
       open={isModalOpen} 
       onOk={handleOk} 
-      onCancel={handleCancel}
       okButtonProps={{ className: 'custom-ok-button' }}
       cancelButtonProps={{ className: 'custom-cancel-button' }}
       okText="Save"
