@@ -92,19 +92,25 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       </Space>
     </Radio.Group>
         </div>
-        
       </div>
+          <div className="notes">
+            <div className="n-txt">
+               <p >Notes:</p>
+            </div>
+            <div className="n-input">
+               <TextArea rows={3} size='small' className='notes-field'
+                                  autoSize={false}
+                                  style={{resize: 'none'}} />
+            </div>
+          </div>
           
-          <p >Notes:</p>
       
         </Space>
         
 
 
 
-      <TextArea rows={3} size='small' className='notes-field'
-      autoSize={false}
-      style={{resize: 'none'}} />
+     
       </Modal>
     </>
   );
