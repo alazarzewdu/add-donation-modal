@@ -32,50 +32,42 @@ height: 90px;
 }
 
 
-.donation-text {
+.donation {
   margin-top: 30px;
-  font-size: 14px;
 }
 
-.date {
-  margin-top: 28px;
-  position: fixed;
-  margin-left: 20px;
+.d-input {
+  margin-left: 120px;
+  margin-top: -36px;
 }
 
-.amount {
-position: fixed;
+.a-txt {
+  margin-left: 40px;
+}
+
+.a-input {
+  margin-left: 120px;
+  margin-top: -36px;
+}
+
+.a-i {
   width: 100px;
-  margin-top: 66px;
-  margin-left: 20px;
-}
-
-.amount-txt {
-  margin-left: 42px;
-}
-
-.radio {
-  position: fixed;
-  margin-top: 103px;
-  margin-left: 20px;
-}
-
-.notes-txt {
-margin-top: 80px;
-}
-
-.notes-field {
-  position: fixed;
-  margin-top: 205px;
-  margin-left: 20px;
-  width: 200px;
 }
 
 
-.notes-txt {
-  margin-left: 50px;
-  padding-bottom: 50px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .custom-ok-button {
   background-color: #820014;
