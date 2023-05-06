@@ -102,7 +102,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
                <p >Notes:</p>
             </div>
             <div className="n-input">
-               <TextArea rows={3} size='small' className='notes-field'
+               <TextArea rows={4} size='small' className='notes-field'
                                   autoSize={false}
                                   style={{resize: 'none'}} />
             </div>
