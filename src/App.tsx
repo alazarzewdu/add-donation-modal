@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Modal, Input, Radio } from 'antd';
+import { Button, Modal, Input, Radio, message } from 'antd';
 import {DatePicker, Space } from 'antd';
 import type {DatePickerProps, RadioChangeEvent} from 'antd';
 
@@ -15,6 +15,8 @@ const App: React.FC = () => {
 
 const onChange: DatePickerProps['onChange'] = (date, dateString) => 
   console.log(date, dateString);
+
+ const [messageApi, contextHolder] = message.useMessage();
 
  const onChanger = (e: RadioChangeEvent) => {
     console.log('radio checked', e.target.value);
@@ -36,6 +38,13 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
     setIsModalOpen(false);
   };
 
+  const success = () => {
+    messageApi.open({
+      type: 'success',
+      content: 'This is a success message',
+    });
+  };
+
   const profile_detail = ['Lee, Michelle', <br/>, '1488 Olympus Ave', <br/>, 'Berkley, CA 94708'];
 
 
@@ -46,6 +55,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       </Button>
       <Modal title="Add Donation" 
       className='btn' 
+      
       open={isModalOpen} 
       onOk={handleOk} 
       onCancel={handleCancel}
