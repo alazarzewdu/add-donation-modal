@@ -77,26 +77,29 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
         <div className="a-input">
           <Input placeholder='25' size='small'className='a-i'/>
         </div>
-          
       </div>
-          
-          <p>Payment Type:</p>
-          <p >Notes:</p>
       
-        </Space>
-        
-        
-        
-
-       
-
-       {/* <Radio.Group onChange={onChanger} value={value} className='radio'>
+      <div className="payment">
+        <div className="p-txt">
+          <p>Payment Type:</p>
+        </div>
+        <div className="p-input">
+          <Radio.Group onChange={onChanger} value={value} className='radio'>
       <Space direction="vertical">
         <Radio value={1}>Electronic</Radio>
         <Radio value={2}>Cash/Check</Radio>
         <Radio value={3}>In Kind</Radio>
       </Space>
-    </Radio.Group> */}
+    </Radio.Group>
+        </div>
+        
+      </div>
+          
+          <p >Notes:</p>
+      
+        </Space>
+        
+
 
 
       <TextArea rows={3} size='small' className='notes-field'
