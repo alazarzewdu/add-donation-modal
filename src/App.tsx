@@ -86,7 +86,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       
       <div className="payment">
         <div className="p-txt">
-          <p>Payment Type:</p>
+          <p>Method:</p>
         </div>
         <div className="p-input">
           <Radio.Group onChange={onChanger} value={value} className='radio'>
@@ -103,7 +103,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
                <p >Notes:</p>
             </div>
             <div className="n-input">
-               <TextArea rows={4} size='small' className='notes-field'
+               <TextArea rows={6} size='small' className='notes-field'
                                   autoSize={false}
                                   style={{resize: 'none'}} />
             </div>

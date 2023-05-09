@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 #root {
-  
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -8,32 +7,27 @@
 }
 
 * {
- font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-
-
-
 .btn-dashed {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: #820014;
   font-size: 14px;
 }
 
 .person {
-margin-top: 25px;
-width: 90px;
-height: 90px;
+  margin-top: 25px;
+  width: 90px;
+  height: 90px;
 }
-
 
 .profile_detail {
   padding-left: 100px;
   margin-top: -80px;
   font-size: 14px;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
 }
-
 
 .donation {
   margin-top: 30px;
@@ -62,6 +56,10 @@ height: 90px;
   margin-top: -36px;
 }
 
+.p-txt {
+  margin-left: 40px;
+}
+
 .n-txt {
   margin-left: 50px;
 }
@@ -74,30 +72,13 @@ height: 90px;
 
 .notes-field {
   width: 300px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .custom-ok-button {
   background-color: #820014;
 }
 
 .custom-cancel-button {
-  color:#820014;
-  border: 0.7px solid#820014
+  color: #820014;
+  border: 0.7px solid#820014;
 }
-
