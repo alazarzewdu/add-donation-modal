@@ -53,6 +53,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
       
       open={isModalOpen} 
       onOk={handleOk} 
+      onCancel={handleCancel}
       okButtonProps={{ className: 'custom-ok-button' }}
       cancelButtonProps={{ className: 'custom-cancel-button' }}
       okText="Save"
