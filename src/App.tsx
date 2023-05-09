@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import { Button, Modal, Input, Radio } from 'antd';
 import {DatePicker, Space } from 'antd';
 import type {DatePickerProps, RadioChangeEvent} from 'antd';
@@ -103,7 +104,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) =>
                <p >Notes:</p>
             </div>
             <div className="n-input">
-               <TextArea rows={6} size='small' className='notes-field'
+               <TextArea rows={5} size='small' className='notes-field'
                                   autoSize={false}
                                   style={{resize: 'none'}} />
             </div>
